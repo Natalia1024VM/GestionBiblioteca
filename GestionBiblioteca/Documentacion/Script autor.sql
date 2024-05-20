@@ -29,6 +29,14 @@ BEGIN
 	select * from Autor
 	where Nombre LIKE '%' + @nombre + '%'
 END
+GO
+CREATE PROCEDURE SP_ConsultarAutorPorID
+@idAutor int
+AS
+BEGIN
+	select * from Autor
+	where IdAutor = @idAutor
+END
 
 GO
 CREATE PROCEDURE SP_EliminarAutor
