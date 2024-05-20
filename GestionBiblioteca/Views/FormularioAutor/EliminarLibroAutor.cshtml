@@ -1,0 +1,54 @@
+﻿@model GestionBiblioteca.ViewModel.AutorViewModel
+@{
+    ViewBag.Title = "Libros por Autor";
+}
+
+@using (Html.BeginForm())
+{
+
+    <label class="MensajeError">@Html.ValidationSummary(true)</label>
+    @Html.HiddenFor(model => model.id)
+    @Html.HiddenFor(model => model.IdLibro)
+
+    <section id="formulario">
+        <label style="align-items; margin: auto 350px;" class="titulo">Eliminar Libro del autor</label>
+        <table>
+            <tr></tr>
+            <tr>
+                <td>
+                    <div style="margin-right:35px">
+                        <div>
+                            @Html.LabelFor(model => model.Nombre, new { @class = "label" })
+                        </div>
+                        <div>
+                            @Html.TextBoxFor(model => model.Nombre, new { @class = "cuadrotexto", @readonly = true })
+                        </div>
+                        <div class="MensajeError">
+                            @Html.ValidationMessageFor(model => model.Nombre, null, new { @class = "control-label", @size = "80" })
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div style="margin-right:35px">
+                        <div>
+                            @Html.LabelFor(model => model.NombreLibro, new { @class = "label" })
+                        </div>
+                        <div>
+                            @Html.TextBoxFor(model => model.NombreLibro, new { @class = "cuadrotexto", @readonly = true })
+                        </div>
+                        <div class="MensajeError">
+                            @Html.ValidationMessageFor(model => model.NombreLibro, null, new { @class = "control-label", @size = "80" })
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+
+        </table>
+    </section>
+    <br />
+
+    <button class="btn btn-primary" name="consulta" value="Regresar" type="submit">Regresar</button>
+    <button class="btn btn-primary" name="consulta" value="Eliminar" type="submit">Eliminar Libro</button>
+
+} 

@@ -1,0 +1,155 @@
+﻿@model GestionBiblioteca.ViewModel.LibroViewModel
+@{
+    ViewBag.Title = "Libro";
+}
+
+@using (Html.BeginForm())
+{
+    <label class="MensajeError">@Html.ValidationSummary(true)</label>
+
+    <section id="formulario">
+        <label style="align-items; margin: auto 400px;" class="titulo">Información Libros</label>
+        <div style="margin-right:35px">
+            <div>
+                @Html.LabelFor(model => model.id, new { @class = "label" })
+            </div>
+            <div>
+                @Html.TextBoxFor(model => model.id, new { @class = "cuadrotexto" })
+            </div>
+            <div class="MensajeError">
+                @Html.ValidationMessageFor(model => model.id, null, new { @class = "control-label", @size = "80" })
+            </div>
+        </div>
+        <br />
+        <button class="btn btn-primary" name="consulta" value="ConsultaID" type="submit">Consultar</button>
+        <br />
+        <br />
+
+        <a class="btn btn-primary" onclick="MostarDivAgregar()">> Adicionar Nuevo Libro</a>
+        <br />
+        <br />
+
+        <div id="TablaAgregar" style="display: none">
+            <table>
+                <tr></tr>
+                <tr>
+                    <td>
+                        <div style="margin-right:35px">
+                            <div>
+                                @Html.LabelFor(model => model.Nombre, new { @class = "label" })
+                            </div>
+                            <div>
+                                @Html.TextBoxFor(model => model.Nombre, new { @class = "cuadrotexto" })
+                            </div>
+                            <div class="MensajeError">
+                                @Html.ValidationMessageFor(model => model.Nombre, null, new { @class = "control-label", @size = "80" })
+                            </div>
+                        </div>
+                    </td>
+                
+                    <td>
+                        <div style="margin-right:35px">
+                            <div>
+                                @Html.LabelFor(model => model.FechaPublicacion, new { @class = "label" })
+                            </div>
+                            <div>
+                                @Html.TextBoxFor(model => model.FechaPublicacion, "{0:d}", new { @placeholder="dd/mm/yyyy", @class = "input-large, cuadrotexto", @size = "27" })
+                            </div>
+                            <div class="MensajeError">
+                                @Html.ValidationMessageFor(model => model.FechaPublicacion, null, new { @class = "control-label", @size = "80" })
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+            <br />
+            <button class="btn btn-primary" name="consulta" value="Adicionar" type="submit">Agregar Libro</button>
+
+        </div>
+    </section>
+    <br />
+
+
+    <br />
+    <br />
+    <br />
+
+    <section id="tabla">
+        <div>
+            <label class="SUbtitulo">Lista Libros</label>
+            <br />
+            <table class="table">
+                <tr>
+                    <th>
+                        Código
+                    </th>
+                    <th>
+                        Nombre
+                    </th>
+                    <th>
+                        Fecha Publicación
+                    </th>
+                    @if (Model.lista.Count > 0)
+                    {
+                        <th></th>
+                        <th></th>
+                    }
+                </tr>
+                @if (Model.lista.Count > 0)
+                {
+                    @foreach (var item in Model.lista)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.IdLibro)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Nombre)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.FechaPublicacion)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Modificar", "ModificarLibro", new { IdLibro = item.IdLibro })
+                            </td>
+                            <td>
+                                @Html.ActionLink("Eliminar", "EliminarLibro", new { IdLibro = item.IdLibro })
+                            </td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+    </section>
+
+}
+
+@section Scripts {
+
+    <script type="text/javascript" charset="UTF-8">
+
+        $("#id").val(0);
+        $("#FechaPublicacion").val("");
+        $("#Nombre").val("");
+    </script>
+    <script type="text/javascript">
+        $('#FechaPublicacion').datepicker({
+            format: 'dd/mm/yyyy'
+        })
+
+    </script>
+    <script type="text/javascript">
+        function MostarDivAgregar() {
+            element = document.getElementById('TablaAgregar');
+            estado = element.style.display;
+            if (estado == 'none') {
+                element.style.display = 'block'
+            } else {
+                element.style.display = 'none';
+            }
+
+        }
+    </script>
+
+}

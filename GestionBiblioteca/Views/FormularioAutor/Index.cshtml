@@ -1,0 +1,183 @@
+﻿@model GestionBiblioteca.ViewModel.AutorViewModel
+@{
+    ViewBag.Title = "Autor";
+}
+
+@using (Html.BeginForm())
+{
+    <label class="MensajeError">@Html.ValidationSummary(true)</label>
+
+    <section id="formulario">
+        <label style="align-items; margin: auto 350px;" class="titulo">Información Autores</label>
+
+        <div style="margin-right:35px">
+            <div>
+                @Html.LabelFor(model => model.NombreBuscar, new { @class = "label" })
+            </div>
+            <div>
+                @Html.TextBoxFor(model => model.NombreBuscar, new { @class = "cuadrotexto" })
+            </div>
+            <div class="MensajeError">
+                @Html.ValidationMessageFor(model => model.NombreBuscar, null, new { @class = "control-label", @size = "80" })
+            </div>
+        </div>
+        <br />
+        <button class="btn btn-primary" name="consulta" value="ConsultaID" type="submit">Consultar</button>
+        <br />
+        <br />
+
+        <a class="btn btn-primary" onclick="MostarDivAgregar()">> Adicionar Nuevo Autor</a>
+        <br />
+        <br />
+        <div id="TablaAgregar" style="display: none">
+        <table>
+            <tr></tr>
+            <tr>
+                <td>
+                    <div style="margin-right:35px">
+                        <div>
+                            @Html.LabelFor(model => model.Nombre, new { @class = "label" })
+                        </div>
+                        <div>
+                            @Html.TextBoxFor(model => model.Nombre, new { @class = "cuadrotexto" })
+                        </div>
+                        <div class="MensajeError">
+                            @Html.ValidationMessageFor(model => model.Nombre, null, new { @class = "control-label", @size = "80" })
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div style="margin-right:35px">
+                        <div>
+                            @Html.LabelFor(model => model.Apellido, new { @class = "label" })
+                        </div>
+                        <div>
+                            @Html.TextBoxFor(model => model.Apellido, new { @class = "cuadrotexto" })
+                        </div>
+                        <div class="MensajeError">
+                            @Html.ValidationMessageFor(model => model.Apellido, null, new { @class = "control-label", @size = "80" })
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div style="margin-right:35px">
+                        <div>
+                            @Html.LabelFor(model => model.FechaNacimiento, new { @class = "label" })
+                        </div>
+                        <div>
+                            @Html.TextBoxFor(model => model.FechaNacimiento, "{0:d}", new { @placeholder = "dd/mm/yyyy", @class = "input-large, cuadrotexto", @size = "27" })
+
+                        </div>
+                        <div class="MensajeError">
+                            @Html.ValidationMessageFor(model => model.FechaNacimiento, null, new { @class = "control-label", @size = "80" })
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+        <br />
+        <br />
+            <button class="btn btn-primary" name="consulta" value="Adicionar" type="submit">Agregar Autor</button>
+
+        </div>
+    </section>
+    <br />
+
+
+    <br />
+    <br />
+    <br />
+
+    <section id="tabla">
+        <div>
+            <label class="SUbtitulo">Lista Autor</label>
+            <br />
+            <table class="table">
+                <tr>
+                    <th>
+                        Código
+                    </th>
+                    <th>
+                        Nombre
+                    </th>
+                    <th>
+                        Apellido
+                    </th>
+                    <th>
+                        Fecha Nacimiento
+                    </th>
+                    @if (Model.lista.Count > 0)
+                    {
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    }
+                </tr>
+                @if(Model.lista.Count >0)
+                {
+                    @foreach (var item in Model.lista)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IdAutor)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Nombre)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Apellido)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FechaNacimiento)
+                        </td>
+                        <td>
+                                @Html.ActionLink("Modificar", "ModificarAutor", new { IdAutor = item.IdAutor })
+                        </td>
+                        <td>
+                                @Html.ActionLink("Eliminar", "EliminarAutor", new { IdAutor = item.IdAutor })
+                        </td>
+                        <td>
+                            @Html.ActionLink("Libros", "ListarLibro", new { IdAutor = item.IdAutor })
+                        </td>
+                    </tr>
+                }
+                }
+            </table>
+        </div>
+    </section>
+
+   
+}
+
+@section Scripts {
+
+    <script type="text/javascript" charset="UTF-8">
+
+        $("#id").val(0);
+        $("#FechaNacimiento").val("");
+        $("#Nombre").val("");
+        $("#NombreBuscar").val("");
+        $("#Apellido").val("");
+    </script>
+    <script type="text/javascript">
+        function MostarDivAgregar() {
+            element = document.getElementById('TablaAgregar');
+            estado = element.style.display;
+            if (estado == 'none') {
+                element.style.display = 'block'
+            } else {
+                element.style.display = 'none';
+            }
+
+        }
+    </script>
+    <script type="text/javascript">
+        $('#FechaNacimiento').datepicker({
+            format: 'dd/mm/yyyy'
+
+        })
+
+    </script>
+
+}

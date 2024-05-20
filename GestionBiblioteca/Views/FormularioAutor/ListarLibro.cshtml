@@ -1,0 +1,101 @@
+﻿@model GestionBiblioteca.ViewModel.AutorViewModel
+@{
+    ViewBag.Title = "Libros por Autor";
+}
+
+@using (Html.BeginForm())
+{
+    
+    <label class="MensajeError">@Html.ValidationSummary(true)</label>
+    @Html.HiddenFor(model => model.id)
+
+    <section id="formulario">
+        <label style="align-items; margin: auto 350px;" class="titulo">Libros por autor</label>
+        <table>
+            <tr></tr>
+            <tr>
+                <td>
+                    <div style="margin-right:35px">
+                        <div>
+                            @Html.LabelFor(model => model.Nombre, new { @class = "label" })
+                        </div>
+                        <div>
+                            @Html.TextBoxFor(model => model.Nombre, new { @class = "cuadrotexto", @readonly = true })
+                        </div>
+                        <div class="MensajeError">
+                            @Html.ValidationMessageFor(model => model.Nombre, null, new { @class = "control-label", @size = "80" })
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div style="margin-right:35px">
+                        <div>
+                            @Html.LabelFor(model => model.IdLibro, new { @class = "label" })
+                        </div>
+                        <div>
+                            @Html.DropDownList("IdLibro", null, String.Empty, new { @class = "cuadroLista" })
+
+                        </div>
+                        <div class="MensajeError">
+                            @Html.ValidationMessageFor(model => model.IdLibro, null, new { @class = "control-label", @size = "80" })
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+        </table> 
+    </section>
+    <br />
+
+    <button class="btn btn-primary" name="consulta" value="Regresar" type="submit">Regresar</button>
+    <button class="btn btn-primary" name="consulta" value="Adicionar" type="submit">Adicionar Libro</button>
+    <br />
+    <br />
+
+
+    <section id="tabla">
+        <div>
+            <label class="SUbtitulo">Lista Libros</label>
+            <br />
+            <table class="table">
+                <tr>
+                    <th>
+                        Código
+                    </th>
+                    <th>
+                        Nombre
+                    </th>
+                    <th>
+                        Fecha Publicación
+                    </th>
+                    @if (Model.ListaLibros.Count > 0)
+                    {
+                        <th></th>
+                    }
+                </tr>
+                @if (Model.ListaLibros.Count > 0)
+                {
+                    @foreach (var item in Model.ListaLibros)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.IdLibro)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Nombre)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.FechaPublicacion)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Eliminar", "EliminarLibroAutor", new { IdLibro = item.IdLibro, IdAutor = Model.id})
+                            </td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+    </section>
+
+} 

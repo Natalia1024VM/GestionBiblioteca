@@ -1,0 +1,12 @@
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaINL\bin\Debug\net8.0\CapaINL.deps.json
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaINL\bin\Debug\net8.0\CapaINL.dll
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaINL\bin\Debug\net8.0\CapaINL.pdb
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaINL\obj\Debug\net8.0\CapaINL.csproj.AssemblyReference.cache
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaINL\obj\Debug\net8.0\CapaINL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaINL\obj\Debug\net8.0\CapaINL.AssemblyInfoInputs.cache
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaINL\obj\Debug\net8.0\CapaINL.AssemblyInfo.cs
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaINL\obj\Debug\net8.0\CapaINL.csproj.CoreCompileInputs.cache
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaINL\obj\Debug\net8.0\CapaINL.dll
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaINL\obj\Debug\net8.0\refint\CapaINL.dll
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaINL\obj\Debug\net8.0\CapaINL.pdb
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaINL\obj\Debug\net8.0\ref\CapaINL.dll

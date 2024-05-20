@@ -1,0 +1,17 @@
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaBLL\obj\Debug\net8.0\CapaBLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaBLL\obj\Debug\net8.0\CapaBLL.AssemblyInfoInputs.cache
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaBLL\obj\Debug\net8.0\CapaBLL.AssemblyInfo.cs
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaBLL\obj\Debug\net8.0\CapaBLL.csproj.CoreCompileInputs.cache
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaBLL\bin\Debug\net8.0\CapaBLL.deps.json
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaBLL\bin\Debug\net8.0\CapaBLL.dll
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaBLL\bin\Debug\net8.0\CapaBLL.pdb
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaBLL\bin\Debug\net8.0\ClaseDAL.dll
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaBLL\bin\Debug\net8.0\ClaseDAL.pdb
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaBLL\obj\Debug\net8.0\CapaBLL.csproj.AssemblyReference.cache
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaBLL\obj\Debug\net8.0\CapaBLL.csproj.Up2Date
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaBLL\obj\Debug\net8.0\CapaBLL.dll
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaBLL\obj\Debug\net8.0\refint\CapaBLL.dll
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaBLL\obj\Debug\net8.0\CapaBLL.pdb
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaBLL\obj\Debug\net8.0\ref\CapaBLL.dll
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaBLL\bin\Debug\net8.0\CapaINL.dll
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\CapaBLL\bin\Debug\net8.0\CapaINL.pdb

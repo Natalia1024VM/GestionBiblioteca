@@ -1,0 +1,14 @@
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\ClaseDAL\obj\Debug\net8.0\ClaseDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\ClaseDAL\obj\Debug\net8.0\ClaseDAL.AssemblyInfoInputs.cache
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\ClaseDAL\obj\Debug\net8.0\ClaseDAL.AssemblyInfo.cs
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\ClaseDAL\obj\Debug\net8.0\ClaseDAL.csproj.CoreCompileInputs.cache
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\ClaseDAL\bin\Debug\net8.0\ClaseDAL.deps.json
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\ClaseDAL\bin\Debug\net8.0\ClaseDAL.runtimeconfig.json
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\ClaseDAL\bin\Debug\net8.0\ClaseDAL.dll
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\ClaseDAL\bin\Debug\net8.0\ClaseDAL.pdb
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\ClaseDAL\obj\Debug\net8.0\ClaseDAL.csproj.AssemblyReference.cache
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\ClaseDAL\obj\Debug\net8.0\ClaseDAL.dll
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\ClaseDAL\obj\Debug\net8.0\refint\ClaseDAL.dll
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\ClaseDAL\obj\Debug\net8.0\ClaseDAL.pdb
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\ClaseDAL\obj\Debug\net8.0\ClaseDAL.genruntimeconfig.cache
+C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\ClaseDAL\obj\Debug\net8.0\ref\ClaseDAL.dll

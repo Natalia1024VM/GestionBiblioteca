@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "31t6tFa49c12CEzXLqZFTvjSwrLhSQfIxDaN7kSWVaCiYitAgjMblSHIUPAyyzH4WBdTsCrJHgrZ6vaY0YZxpA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ANDRES\\Documents\\Natalia\\GestionBiblioteca\\CapaINL\\CapaINL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ANDRES\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
+    "C:\\Users\\ANDRES\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ANDRES\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\ANDRES\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

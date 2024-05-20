@@ -1,0 +1,79 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = GestionBiblioteca
+build_property.RootNamespace = GestionBiblioteca
+build_property.ProjectDir = C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\GestionBiblioteca\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\ANDRES\Documents\Natalia\GestionBiblioteca\GestionBiblioteca
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/ANDRES/Documents/Natalia/GestionBiblioteca/GestionBiblioteca/Views/FormularioAutor/EliminarAutor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXVsYXJpb0F1dG9yXEVsaW1pbmFyQXV0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ANDRES/Documents/Natalia/GestionBiblioteca/GestionBiblioteca/Views/FormularioAutor/EliminarLibroAutor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXVsYXJpb0F1dG9yXEVsaW1pbmFyTGlicm9BdXRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ANDRES/Documents/Natalia/GestionBiblioteca/GestionBiblioteca/Views/FormularioAutor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXVsYXJpb0F1dG9yXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ANDRES/Documents/Natalia/GestionBiblioteca/GestionBiblioteca/Views/FormularioAutor/ListarLibro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXVsYXJpb0F1dG9yXExpc3RhckxpYnJvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ANDRES/Documents/Natalia/GestionBiblioteca/GestionBiblioteca/Views/FormularioAutor/ModificarAutor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXVsYXJpb0F1dG9yXE1vZGlmaWNhckF1dG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ANDRES/Documents/Natalia/GestionBiblioteca/GestionBiblioteca/Views/FormularioLibro/EliminarLibro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXVsYXJpb0xpYnJvXEVsaW1pbmFyTGlicm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ANDRES/Documents/Natalia/GestionBiblioteca/GestionBiblioteca/Views/FormularioLibro/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXVsYXJpb0xpYnJvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ANDRES/Documents/Natalia/GestionBiblioteca/GestionBiblioteca/Views/FormularioLibro/ModificarLibro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXVsYXJpb0xpYnJvXE1vZGlmaWNhckxpYnJvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ANDRES/Documents/Natalia/GestionBiblioteca/GestionBiblioteca/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ANDRES/Documents/Natalia/GestionBiblioteca/GestionBiblioteca/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ANDRES/Documents/Natalia/GestionBiblioteca/GestionBiblioteca/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ANDRES/Documents/Natalia/GestionBiblioteca/GestionBiblioteca/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ANDRES/Documents/Natalia/GestionBiblioteca/GestionBiblioteca/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ANDRES/Documents/Natalia/GestionBiblioteca/GestionBiblioteca/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ANDRES/Documents/Natalia/GestionBiblioteca/GestionBiblioteca/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-gb1abfrcrg
